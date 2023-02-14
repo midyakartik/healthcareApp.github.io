@@ -1,0 +1,167 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: #0D47A1;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #D1C4E9;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Search section styles */
+  #search {
+    background-color: #E8EAF6;
+  }
+  
+  #search form {
+    display: flex;
+  }
+  
+  #search input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  #search button {
+    background-color: #0D47A1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  #search button:hover {
+    background-color: #1E88E5;
+  }
+  
+  /* Search results styles */
+  #results li {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #E8EAF6;
+    padding: 20px;
+  }
+  
+  #results .provider-info {
+    flex-grow: 1;
+  }
+  
+  #results h3 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #results p {
+    margin: 0;
+  }
+  
+  #results .provider-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #results a {
+    background-color: #0D47A1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #results a:hover {
+    background-color: #1E88E5;
+  }
+  
+  /* Provider info styles */
+  #provider-info .provider-details {
+    margin-bottom: 20px;
+  }
+  
+  #provider-info p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #provider-info .provider-actions {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /* Appointment form styles */
+  #appointment-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #appointment-form select,
+  #appointment-form input[type="date"],
+  #appointment-form input[type="time"],
+  #appointment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20
+  }

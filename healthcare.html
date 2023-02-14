@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Health Care App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="healthcare.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Health Care App</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Providers</a></li>
+            <li><a href="#">Appointments</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="search">
+        <div class="container">
+          <h2>Find a Provider</h2>
+          <form>
+            <input type="text" name="query" placeholder="Specialty, Location, Name">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="results">
+        <div class="container">
+          <h2>Search Results</h2>
+          <ul>
+            <li>
+              <div class="provider-info">
+                <h3>Dr.Ajay Midya</h3>
+                <p>Cardiologist</p>
+                <p>123 Matilal Neheru Road, Kolkata West Bengal</p>
+                <p>+91 xxxxxxxxxx</p>
+              </div>
+              <div class="provider-actions">
+                <a href="#">Book Appointment</a>
+                <a href="#">More Info</a>
+              </div>
+            </li>
+            <!-- Add more search result items here -->
+          </ul>
+        </div>
+      </section>
+
+      <section id="provider-info">
+        <div class="container">
+          <h2>Dr. Ajay Midya</h2>
+          <div class="provider-details">
+            <p>Cardiologist</p>
+            <p>Medical School: NRS Medical College</p>
+            <p>Certifications: Medical Council of India</p>
+            <p>Patient Reviews: 4.5 stars (23 reviews)</p>
+          </div>
+          <div class="provider-actions">
+            <a href="#">Book Appointment</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="appointment-form">
+        <div class="container">
+          <h2>Book an Appointment</h2>
+          <form>
+            <label for="provider">Provider:</label>
+            <select name="provider" id="provider">
+              <option value="dr-midya">Dr. Ajay Midya (Cardiologist)</option>
+              <option value="dr-Koley">Dr. Sanjay Koley (Dermatologist)</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time">
+            <label for="reason">Reason for Visit:</label>
+            <textarea name="reason" id="reason"></textarea>
+            <label for="insurance">Insurance Information:</label>
+            <textarea name="insurance" id="insurance"></textarea>
+            <button type="submit">Book Appointment</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
